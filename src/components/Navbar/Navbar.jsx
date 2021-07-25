@@ -10,7 +10,7 @@ import { ShoppingCart } from "@material-ui/icons";
 import { Link, useLocation } from "react-router-dom";
 import useStyles from "./styles";
 
-import logo from "../../assets/coffee-cup.png";
+import logo from "../../assets/logo.png";
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
@@ -33,7 +33,7 @@ const Navbar = ({ totalItems }) => {
               height="25px"
               className={classes.image}
             />
-            E-Commerce.js
+            Yolanda Jewelry
           </Typography>
           <div className={classes.grow} />
           {location.pathname === "/" && (
