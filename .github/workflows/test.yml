@@ -1,0 +1,11 @@
+on: push
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+    env:
+      HELLO: world
+    steps:
+      - run: "echo Hello:$HELLO"
+      - run: |
+          echo node version: `node -v` 
+          pwd
